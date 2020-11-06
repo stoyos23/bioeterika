@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/bioeterika/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/bioeterika/static/js/main.6864b76d.chunk.js",
+    "main.js.map": "/bioeterika/static/js/main.6864b76d.chunk.js.map",
+    "runtime-main.js": "/bioeterika/static/js/runtime-main.de48db9f.js",
+    "runtime-main.js.map": "/bioeterika/static/js/runtime-main.de48db9f.js.map",
+    "static/js/2.31254ade.chunk.js": "/bioeterika/static/js/2.31254ade.chunk.js",
+    "static/js/2.31254ade.chunk.js.map": "/bioeterika/static/js/2.31254ade.chunk.js.map",
+    "static/js/3.2d93653c.chunk.js": "/bioeterika/static/js/3.2d93653c.chunk.js",
+    "static/js/3.2d93653c.chunk.js.map": "/bioeterika/static/js/3.2d93653c.chunk.js.map",
+    "index.html": "/bioeterika/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/bioeterika/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.31254ade.chunk.js.LICENSE.txt": "/bioeterika/static/js/2.31254ade.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/bioeterika/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de48db9f.js",
+    "static/js/2.31254ade.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.6864b76d.chunk.js"
+  ]
+}
