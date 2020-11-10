@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, ImageBox, Button, TestBtn} from './HomePageElements';
 import lavenderImg from '../../images/lavender-oil.jpg'
-
+import {Link} from 'react-router-dom';
 
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
         <>
             <ImageBox>
                 <Image src={lavenderImg} alt="Snow"></Image>
-                <TestBtn>Shop Now</TestBtn>
+                <Link to="/shop"><TestBtn>Shop Now</TestBtn></Link>
             </ImageBox>
 
             <div className="text-center">

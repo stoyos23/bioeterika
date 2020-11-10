@@ -64,4 +64,7 @@ export const TestBtn = styled.button`
             height: 100%;
             border-radius:20vh;
         }
+        @media (max-width: 768px) {
+            font-size: x-large;
+        }
 `;
