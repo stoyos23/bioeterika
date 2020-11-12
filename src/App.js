@@ -1,12 +1,14 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar/index';
+import {TopSpacer} from './pages/Home/HomePageElements';
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
+      <TopSpacer/>
       BioEterika App
-    </div>
+    </>
   );
 }
 
