@@ -99,7 +99,7 @@ export const Heading = styled.header`
     text-shadow: 4px 5px 3px rgba(15, 195, 204, 0.9);
     font-weight:lighter;
     margin-top:10vh;
-    @media (max-width: 668px) {
+    @media (max-width: 670px) {
         font-size:3em;
     }
 `;
@@ -113,13 +113,20 @@ export const TestButton = styled.button`
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
-    height: 10%;
+    height: auto%;
 	appearance: none;
 	padding: 1em 2em;
 	color: white;
 	cursor: pointer;
 	outline: none;
 	border-radius: 100px;
+    font-size:4vh;
+    font-weight:bold;
+    
+    @media (max-width: 670px) {
+        width:60%;
+        font-size:3vh;
+    }
 	
 	// The magic
 	border: 2px solid #12d9eee6;

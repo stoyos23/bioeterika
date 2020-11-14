@@ -23,7 +23,7 @@ export const NavMenu = styled.menu`
     top:0;
     border-bottom: 2px solid;
     border-color: #b7b6b6;
-    
+
     &.active{
         visibility:visible;
         transition: all 0.3s;
@@ -53,8 +53,7 @@ export const LinkButton = styled.div`
             background-color: #00daff
         }
         :active{
-            background-color: #9B00AA;
-            box-shadow: 0 5px #666;
+            background-color: #00daff;
             transform: translateY(4px);
         }
 `;
