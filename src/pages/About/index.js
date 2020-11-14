@@ -1,13 +1,13 @@
 import React from 'react';
 import {TopSpacer} from '../Home/HomePageElements';
 
-const Shop = () => {
+const About = () => {
     return(
         <>
-        <TopSpacer />
-        <p>Shop Page</p>
+        <TopSpacer/>
+        <p>About Page</p>
         </>
     )
 }
 
-export default Shop;
+export default About;
