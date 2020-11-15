@@ -86,9 +86,6 @@ export const TopSpacer = styled.section`
     }
 `;
 
-export const TestDivider = styled.div`
-
-`;
 
 export const Heading = styled.header`
     font-size:6em;

@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 
-export const TextArea = styled.textarea`
-    display:block;
-    margin:auto;
+export const Form = styled.form`
+    display:grid;
+    width:50%;
+    margin-top:5vh;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+`;
+export const Input = styled.input`
+    display:inline-block;
 `;
 
-export const SubmitButton = styled.button`
-    height:5vh;
-    width:15vh;
-    display:block;
-    margin:auto;
+export const Label = styled.label`
+    display:inline-block;
 `;

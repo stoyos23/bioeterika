@@ -1,23 +1,37 @@
 import React, { useState } from 'react';
-import { TextArea, SubmitButton } from './ContactPageElements';
+import { Form, Input } from './ContactPageElements';
 import { TopSpacer } from '../../pages/Home/HomePageElements';
+import emailjs from 'emailjs-com';
+import emailSender from './emailSender';
 
 function Contact() {
 
-    const [textInput, setTextInput] = useState("");
 
-    const userInputHandler = (e) => {
-        setTextInput(e.target.value);
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_xd0cqts', 'template_e47d3o8', e.target, 'user_vVoUMF4u9UV23R8xtHXUK')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     }
 
     return (
         <>
             <TopSpacer />
 
-            <h1>Contact Form</h1>
-            <TextArea onChange={userInputHandler} cols="40" rows="10" />
-            <SubmitButton >Submit</SubmitButton>
-            <text>{textInput}</text>
+            <Form className="contact-form" onSubmit={emailSender}>
+                <Input type="hidden" name="contact_number" />
+                <label>Name</label>
+                <Input type="text" name="user_name" />
+                <label>Email</label>
+                <Input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <Input type="submit" value="Send" />
+            </Form>
         </>
     )
 }
