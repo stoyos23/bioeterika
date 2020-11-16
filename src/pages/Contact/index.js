@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
-import { TextArea, SubmitButton } from './ContactPageElements';
+import { Form, Input } from './ContactPageElements';
 import { TopSpacer } from '../../pages/Home/HomePageElements';
+import emailSender from './emailSender';
 
 function Contact() {
-
-    const [textInput, setTextInput] = useState("");
-
-    const userInputHandler = (e) => {
-        setTextInput(e.target.value);
-    }
 
     return (
         <>
             <TopSpacer />
 
-            <h1>Contact Form</h1>
-            <TextArea onChange={userInputHandler} cols="40" rows="10" />
-            <SubmitButton >Submit</SubmitButton>
-            <text>{textInput}</text>
+            <Form className="contact-form" onSubmit={emailSender}>
+                <Input type="hidden" name="contact_number" />
+                <label>Name</label>
+                <Input type="text" name="user_name" />
+                <label>Email</label>
+                <Input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <Input type="submit" value="Send" />
+            </Form>
         </>
     )
 }
