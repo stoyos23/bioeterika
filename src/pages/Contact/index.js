@@ -7,7 +7,7 @@ import emailjs from 'emailjs-com';
 function Contact() {
 
     return (
-        <>
+        <div>
             <TopSpacer />
 
             <Form className="contact-form" >
@@ -20,7 +20,7 @@ function Contact() {
                 <textarea name="message" />
                 <Input type="submit" value="Send" />
             </Form>
-        </>
+        </div>
     )
 }
 

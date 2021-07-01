@@ -18,7 +18,7 @@ const Home = () => {
     }
 
     return (
-        <>
+        <div>
             <TopSpacer />
 
             <ImageBox>
@@ -33,7 +33,7 @@ const Home = () => {
                 <h2>About Us</h2>
                 <p>Some information about the company, production, origins etc.</p>
             </div>
-        </>
+        </div>
     )
 }
 

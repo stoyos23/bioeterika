@@ -3,10 +3,10 @@ import {TopSpacer} from '../Home/HomePageElements';
 
 const Shop = () => {
     return(
-        <>
-        <TopSpacer />
-        <p>Shop Page</p>
-        </>
+        <div>
+            <TopSpacer />
+            <p>Shop Page</p>
+        </div>
     )
 }
 

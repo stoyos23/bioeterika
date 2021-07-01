@@ -67,7 +67,7 @@ export default class Navbar extends React.Component {
   render() {
     console.log(this.state);
     return (
-      <>
+      <div>
         <Router>
 
           <NavMenu className={this.state.show ? "active" : "hidden"}>
@@ -98,7 +98,7 @@ export default class Navbar extends React.Component {
           </Switch>
 
         </Router>
-      </>
+      </div>
     );
   }
 }
