@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Form, Input } from './ContactPageElements';
 import { TopSpacer } from '../../pages/Home/HomePageElements';
 import emailjs from 'emailjs-com';
-import emailSender from './emailSender';
 
 function Contact() {
 
@@ -11,7 +10,7 @@ function Contact() {
         <>
             <TopSpacer />
 
-            <Form className="contact-form" onSubmit={emailSender}>
+            <Form className="contact-form" >
                 <Input type="hidden" name="contact_number" />
                 <label>Name</label>
                 <Input type="text" name="user_name" />
